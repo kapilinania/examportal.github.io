@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-mode">
+    <div class="container-fluid pt-2">
+        <div class="d-flex justify-content-between">
+            <div class="flex-item">
+                <div class="row">
+                    <div class="head_con">ADIT IBM Test(Held on: 3 Augest 2023 Shift I)</div>
+                </div>
+            </div>
+            <div class="flex-item time_left" >
+                Time Left : <span id="head_timer"></span>
+            </div>
+            <div class="flex-item">
+                <button class="btn header_fullscreen" id="fullscreenButton">Enter Full Screen</button>
+                <button class="btn btn-dark " id="darkModeButton"><i class="bi bi-brightness-high-fill"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- -------------main top section is over now --------------- -->
+    <div class="container-fluid mt-2 examinfo_middle">
+        <div class="d-flex">
+            <div class="flex-item">Section : </div>
+            <div class="flex-item "> Core Module II Exam</div>   
+        </div>
+    </div>
+    <!-- ------top second section is over now ---------  -->
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 font-weight-bold question_border"> <p class="questin_number">Question No: 1</p></div>
+                <div class="col-3 border borde-danger pt-2">
+                    <div class="d-flex justify-content-between">
+                        <div class="flex-item">
+                            <div>Marks</div> 
+                            <div class="mark_point pt-1 mb-1">+2</div>   
+                        </div>
+                        <div class="flex-item ">
+                            <div>Time</div> 
+                            <div id="time_start">00:00:01</div>   
+                        </div> 
+                        <div class="flex-item "> 
+                            <div>View In</div> 
+                            <div class="pt-1">
+                                <select id="languageSelect">
+                                    <option value="english">English</option>
+                                    <option value="Hindi">Hindi</option>   
+                                    <!-- Add more options as needed -->
+                                </select>
+                            </div> 
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-3 main_question_section pt-2">
+                    <div class="row">
+                        <div class="d-flex">
+                            <div class="flex-item"><img src="https://cdn-icons-png.flaticon.com/256/149/149071.png" alt="" class="img-fluid person_main_img">  </div>
+                            <div class="flex-item person_text"> Kapil Inania</div>   
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!-- question section is here------ -->
+    <section>
+        <div class="container-fluid main_question_container">
+            <div class="row">
+             <div class="col-9">
+                <div class="row pt-4">
+                    <div class="col-12 main_question">
+                      Select the opction that is right.
+                    </div>
+                    <div class="col-12 pt-2 pb-2 main_question">
+                     1.  which of the following CSS Property sets the Stacking order of positioned elements?
+                    </div>
+                    <div class="col-12 radio-container">
+                        <label class="main_question">
+                          <input type="radio" name="option" value="z-index"> z-index
+                        </label>
+                        <label class="main_question">
+                          <input type="radio" name="option" value="position"> position
+                        </label>
+                        <label class="main_question">
+                          <input type="radio" name="option" value="order"> order
+                        </label>
+                        <label class="main_question">
+                          <input type="radio" name="option" value="stack-index"> stack-index
+                        </label>
+                        <div class="d-flex mt-5">
+                            <!-- Skip button -->
+                            <button type="button" class="btn btn-secondary m-3 pr-3">Skip</button>
+                            <!-- Clear Response button -->
+                            <button type="button" class="btn btn-danger m-3">Clear Response</button>
+                            <!-- Save & Next button -->
+                            <button type="button" class="btn btn-primary m-3">Save & Next</button>
+                        </div>
+                      </div>
+
+                </div>
+             </div>
+             <div class="col-3  middle_question">
+                 <div class="row examinfo_middle_sec">
+                     <div class="d-flex">
+                         <div class="flex-item">Section :  </div>
+                         <div class="flex-item "> Core Module II Exam</div>   
+                     </div>
+                 </div>
+                 <div class="row answer_sec pt-2">
+                    <div class="d-flex justify-content-between">
+                        <div class="flex-item">
+                            <div class="mark_point1 pt-1 mb-1">20</div>   
+                            <div>Answerd</div> 
+                        </div>
+                        <div class="flex-item ">
+                            <div class="mark_point2 pt-1 mb-1">20</div>   
+                            <div>Skipped</div> 
+                        </div> 
+                        <div class="flex-item ">   
+                            <div class="mark_point3 pt-1 mb-1">20</div>   
+                            <div>Not Answerd</div>
+                        </div>  
+                    </div>
+                 </div>
+                 <div class="row">
+                     <div class="grid-container">
+                         <div class="grid-container">
+                             <div class="grid-item"> 1</div>
+                             <div class="grid-item"> 2</div>
+                             <div class="grid-item"> 3</div>
+                             <div class="grid-item"> 4</div>
+                             <div class="grid-item"> 5</div>
+                             <div class="grid-item"> 6</div>
+                             <div class="grid-item"> 7</div>
+                             <div class="grid-item"> 8</div>
+                             <div class="grid-item"> 9</div>
+                             <div class="grid-item"> 10</div>
+                             <div class="grid-item"> 11</div>
+                             <div class="grid-item"> 12</div>
+                             <div class="grid-item"> 13</div>
+                             <div class="grid-item"> 14</div>
+                             <div class="grid-item"> 15</div>
+                             <div class="grid-item"> 16</div>
+                             <div class="grid-item"> 17</div>
+                             <div class="grid-item"> 18</div>
+                             <div class="grid-item"> 19</div>
+                             <div class="grid-item"> 20</div>
+                             <div class="grid-item"> 21</div>
+                             <div class="grid-item"> 22</div>
+                             <div class="grid-item"> 23</div>
+                             <div class="grid-item"> 24</div>
+                             <div class="grid-item"> 25</div>
+                             <div class="grid-item"> 26</div>
+                             <div class="grid-item"> 27</div>
+                             <div class="grid-item"> 28</div>
+                             <div class="grid-item"> 29</div>
+                             <div class="grid-item"> 30</div>
+                             <div class="grid-item"> 31</div>
+                             <div class="grid-item"> 32</div>
+                             <div class="grid-item"> 33</div>
+                             <div class="grid-item"> 34</div>
+                             <div class="grid-item"> 35</div>
+                             <div class="grid-item"> 36</div>
+                             <div class="grid-item"> 37</div>
+                             <div class="grid-item"> 38</div>
+                             <div class="grid-item"> 39</div>
+                             <div class="grid-item"> 40</div>
+                             <div class="grid-item"> 41</div>
+                             <div class="grid-item"> 42</div>
+                             <div class="grid-item"> 43</div>
+                             <div class="grid-item"> 44</div>
+                             <div class="grid-item"> 45</div>
+                             <div class="grid-item"> 46</div>
+                             <div class="grid-item"> 47</div>
+                             <div class="grid-item"> 48</div>
+                             <div class="grid-item"> 49</div>
+                             <div class="grid-item"> 50</div>
+     
+                             
+                           </div>
+                     </div>
+                 </div>
+                 <div class="row">
+                    <div class="col-12 submit_text">
+                        <button type="button" class="btn btn-warning">Submit Test</button>
+                    </div>
+                 </div>
+             </div>
+            </div>
+         </div>
+    </section>
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="jquerytimer/js/jQuery.countdownTimer.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#head_timer").countdowntimer({
+                hours: 2,
+                seconds: 10,
+                size: "lg"
+            });
+        });
+       
+    </script>
+     <script>
+        $(document).ready(function() {
+            const timeStartDiv = $('#time_start');
+            let seconds = 1;
+
+            function updateTime() {
+                seconds++;
+                const hours = Math.floor(seconds / 3600);
+                const minutes = Math.floor((seconds % 3600) / 60);
+                const remainingSeconds = seconds % 60;
+
+                timeStartDiv.text(`${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`);
+            }
+
+            setInterval(updateTime, 1000); // Start the timer automatically
+        });
+    </script>
+    
+</body>
+
+</html>
